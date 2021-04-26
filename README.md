@@ -1,0 +1,1 @@
+# curse_js_test
