@@ -22,9 +22,8 @@ var Sergey = {
     name: 'Sergey',
     email: 'Sergey@gmail.com'
 }
-var new_obj = ['Name: Andrey; Email: Andrey@gmail.com;', 'Name: Aleksey; Email: Aleksey@gmail.com;', 'Name: Denis; ',
-    'Email: Denis@gmail.com;', 'Name: Igor; Email: Igor@gmail.com;', 'Name: Bogdan; Email: Bogdan@gmail.com;',
-    'Name: Sergey; Email: Sergey@gmail.com;'];
+var new_obj = [Andrey, Aleksey, Denis, Igor, Bogdan, Sergey];
 var Password = prompt ('Введите номер:');
-console.log(new_obj[Password]);
-alert (new_obj[Password]);
+var element = (new_obj[Password]);
+var a = 'Name:' + element.name + '  ' + "Email:" + element.email;
+alert (a);
