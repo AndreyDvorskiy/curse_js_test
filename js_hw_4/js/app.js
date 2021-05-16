@@ -3,12 +3,12 @@ console.table(countries);
 let newCountries = countries.map(function (country){
     return{Name: country.name, Capital: country.capital, Region: country.region};
 })
-console.log(newCountries);
+console.table(newCountries);
 //функция, которая принимает на вход массив стран и возвращает массив отсортированный по убыванию чисел "population"//
 let newCountries2 = countries.sort(function(a, b) {
     return b.population-a.population;
 })
-console.log(newCountries2);
+console.table(newCountries2);
 //функция, которая принимает на вход массив стран и возвращает массив отсортированный по возрастанию
 // строк 'alpha3Code'//
 let newCountries3 = countries.sort(function(a, b){
@@ -19,7 +19,7 @@ let newCountries3 = countries.sort(function(a, b){
         return 1
     return 0
 })
-console.log(newCountries3);
+console.table(newCountries3);
 //Функция которая принимает на вход массив стран и название поля (где каждый из элементов - числа "population")
 // и возвращает среднее значение по этим числам//
 let newCountries4 = (countries.reduce(function (acc, el) {
